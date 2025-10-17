@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'DreamOrphans';
+    src: url(../fonts/DreamOrphans/Dream_Orphans.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DreamOrphans';
+    src: url(../fonts/DreamOrphans/Dream_Orphans_Bd.otf) format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Autoradiographic';
+    src: url(../fonts/Autoradiographic/autoradiographic_rg.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: #00183d;
+    --font-color: #c39f39;
+    --bg-modules-items: #fecf67;
+}
+
+html,
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-family: 'DreamOrphans', sans-serif;
+
+    .welcome-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            img {
+                width: 20%;
+            }
+        }
+
+        .title-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 16px;
+            margin-bottom: 16px;
+
+            .title {
+                font-family: 'Autoradiographic', sans-serif;
+                font-size: clamp(2.2rem, 5vw, 3rem);
+                text-transform: uppercase;
+                text-align: center;
+                white-space: nowrap;
+                width: 100%;
+                vertical-align: middle;
+                margin: 0;
+            }
+    
+            .subtitle {
+                font-family: 'Autoradiographic', sans-serif;
+                font-weight: 400;
+                font-size: clamp(1.5rem, 5vw, 2rem);
+                text-align: center;
+                white-space: nowrap;
+                width: 100%;
+                vertical-align: middle;
+                margin: 0;
+            }
+        }
+
+
+        .welcome-text-wrapper {
+            width: 80%;
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .welcome-video-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
