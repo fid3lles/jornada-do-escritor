@@ -21,14 +21,16 @@
 
 :root {
     --bg-color: #00183d;
-    --font-color: #c39f39;
-    --bg-modules-items: #fecf67;
+    --title-font-color: #c39f39;
+    --content-font-color: #cacaca;
+    --bg-modules-item: #fecf67;
+    --modules-item-text: #0c0c0c;
 }
 
 html,
 body {
     background-color: var(--bg-color);
-    color: var(--font-color);
+    color: var(--content-font-color);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -37,13 +39,15 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
+    margin-top: 10px;
     margin-right: 16px;
     margin-left: 16px;
     font-family: 'Autoradiographic', sans-serif;
 
     hr {
         width: 20%;
-        border: 0.5px solid var(--font-color);
+        border: 0.5px solid var(--title-font-color);
     }
 
     .welcome-wrapper {
@@ -71,6 +75,7 @@ body {
             justify-content: center;
             margin-top: 16px;
             margin-bottom: 16px;
+            color: var(--title-font-color);
 
             .title {
                 font-family: 'DreamOrphans', sans-serif;
@@ -118,13 +123,51 @@ body {
                 width: 90%;
                 text-align: center;
                 font-family: 'DreamOrphans', sans-serif;
+                color: var(--title-font-color);
+                padding-bottom: 10px;
             }
             
             .video-wrapper {
                 width: 80%;
                 height: 210px;
-                background-color: var(--bg-modules-items);
+                background-color: var(--bg-modules-item);
             }
         }
+    }
+
+    .modules-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+        .modules-title-wrapper {
+            width: 90%;
+
+            h1 {
+                width: 90%;
+                text-transform: uppercase;
+                text-align: center;
+                font-family: 'DreamOrphans', sans-serif;
+                color: var(--title-font-color);
+            }
+        }
+
+        .module-card-item {
+            background-color: var(--bg-modules-item);
+            width: 90%;
+            height: 200px;
+
+            h3 {
+                color: var(--modules-item-text);
+                text-transform: uppercase;
+            }
+
+            p {
+                color: var(--modules-item-text);
+            }
+        }
+
     }
 }
