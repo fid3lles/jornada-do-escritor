@@ -39,7 +39,12 @@ body {
     display: flex;
     margin-right: 16px;
     margin-left: 16px;
-    font-family: 'DreamOrphans', sans-serif;
+    font-family: 'Autoradiographic', sans-serif;
+
+    hr {
+        width: 20%;
+        border: 0.5px solid var(--font-color);
+    }
 
     .welcome-wrapper {
         display: flex;
@@ -68,7 +73,7 @@ body {
             margin-bottom: 16px;
 
             .title {
-                font-family: 'Autoradiographic', sans-serif;
+                font-family: 'DreamOrphans', sans-serif;
                 font-size: clamp(2.2rem, 5vw, 3rem);
                 text-transform: uppercase;
                 text-align: center;
@@ -79,7 +84,7 @@ body {
             }
     
             .subtitle {
-                font-family: 'Autoradiographic', sans-serif;
+                font-family: 'DreamOrphans', sans-serif;
                 font-weight: 400;
                 font-size: clamp(1.5rem, 5vw, 2rem);
                 text-align: center;
@@ -92,9 +97,12 @@ body {
 
 
         .welcome-text-wrapper {
-            width: 80%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
 
             p {
+                width: 90%;
                 text-align: justify;
             }
         }
@@ -105,6 +113,18 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            h1 {
+                width: 90%;
+                text-align: center;
+                font-family: 'DreamOrphans', sans-serif;
+            }
+            
+            .video-wrapper {
+                width: 80%;
+                height: 210px;
+                background-color: var(--bg-modules-items);
+            }
         }
     }
 }
