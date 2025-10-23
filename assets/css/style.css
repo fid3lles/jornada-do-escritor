@@ -24,7 +24,7 @@
     --title-font-color: #c39f39;
     --content-font-color: #cacaca;
     --bg-modules-item: #fecf67;
-    --modules-item-text: #0c0c0c;
+    --modules-item-text: #00183d;
 }
 
 html,
@@ -141,9 +141,11 @@ body {
         align-items: center;
         justify-content: center;
         width: 100%;
-        
+
         .modules-title-wrapper {
             width: 90%;
+            display: flex;
+            justify-content: center;
 
             h1 {
                 width: 90%;
@@ -154,19 +156,50 @@ body {
             }
         }
 
-        .module-card-item {
-            background-color: var(--bg-modules-item);
-            width: 90%;
-            height: 200px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
 
-            h3 {
-                color: var(--modules-item-text);
-                text-transform: uppercase;
+            .module-card-item {
+                background-color: var(--bg-modules-item);
+                width: 80%;
+                height: 220px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+
+                .module-card-item-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    h3 {
+                        color: var(--modules-item-text);
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 24px;
+                        margin: 0 0 8px 0;
+                    }
+                    
+                    p {
+                        text-align: center;
+                        font-size: 14px;
+                        margin: 0;
+                        color: var(--modules-item-text);
+                    }
+                }
+
             }
 
-            p {
-                color: var(--modules-item-text);
-            }
         }
 
     }
