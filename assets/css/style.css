@@ -369,8 +369,12 @@ body {
 
             h4 {
                 color: var(--bg-modules-item);
-                margin: 6px 0 0 0;
-                font-size: 24px;
+                margin: 10px 0 0 0;
+                font-size: 20px;
+
+                img {
+                    height: 20px;
+                }
             }
         }
     }
@@ -381,6 +385,8 @@ body {
         align-items: center;
         justify-content: center;
         width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
 
         .faqs-title-wrapper {
             h1 {
@@ -389,16 +395,16 @@ body {
                 font-family: 'DreamOrphans', sans-serif;
                 color: var(--title-font-color);
             }
+            margin-bottom: 20px;
         }
 
         .faqs-accordion-wrapper {
-            width: 100%;
+            width: 90%;
             display: flex;
             flex-direction: column;
             row-gap: 10px;
 
             .faqs-accordion-item {
-                
                 .faqs-accordion-btn {
                     background-color: var(--title-font-color);
                     color: var(--modules-item-text);
@@ -411,22 +417,37 @@ body {
                     border: none;
                     outline: none;
                     transition: 0.4s;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                 }
 
                 div {
-                    padding: 0 18px;
+                    padding: 0 15px;
                     display: none;
                     overflow: hidden;
-
-                    p{
-
-                    }
                 }
             }
         }
     }
+}
 
-    footer {
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    font-family: Consolas;
+    font-size: 10pt;
+    color: var(--bg-modules-item);
 
+    .icon-links {
+        color: var(--bg-modules-item);
+        text-decoration: none;
     }
+
+    a {
+        color: var(--bg-modules-item);
+    }
+
 }
