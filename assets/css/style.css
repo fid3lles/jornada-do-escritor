@@ -346,7 +346,7 @@ body {
             }
 
             .old {
-                font-size: 90px;
+                font-size: 60px;
                 position: relative;
                 position: relative;
                 display: inline-block;
@@ -355,8 +355,8 @@ body {
                     content: "";
                     position: absolute;
                     top: 50%;
-                    left: 0;
-                    width: 100%;
+                    left: 25%;
+                    width: 50%;
                     height: 6px;
                     background: rgb(255, 255, 255);
                 }
@@ -364,7 +364,7 @@ body {
 
             .new {
                 color: var(--title-font-color);
-                font-size: 120px;
+                font-size: 100px;
             }
 
             h4 {
@@ -392,13 +392,17 @@ body {
         }
 
         .faqs-accordion-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
 
-            
             .faqs-accordion-item {
                 
                 .faqs-accordion-btn {
                     background-color: var(--title-font-color);
                     color: var(--modules-item-text);
+                    border-radius: 10px;
                     font-family: 'Autoradiographic', sans-serif;
                     cursor: pointer;
                     padding: 18px;
