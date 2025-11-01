@@ -128,9 +128,13 @@ body {
             }
             
             .video-wrapper {
-                width: 80%;
-                height: 210px;
-                background-color: var(--bg-modules-item);
+                width: 90%;
+                
+                .video-player {
+                    aspect-ratio: 16/9;
+                    width: 100%;
+                }
+
             }
         }
     }
@@ -164,11 +168,13 @@ body {
             padding: 0;
             margin: 0;
             list-style: none;
+            position: relative;
+            z-index: 1;
 
             .module-card-item {
                 background-color: var(--bg-modules-item);
-                width: 80%;
-                height: 220px;
+                width: 90%;
+                height: 200px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -180,7 +186,8 @@ body {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    width: 100%;
+                    margin-left: 16px;
+                    margin-right: 16px;
 
                     h3 {
                         color: var(--modules-item-text);
@@ -200,7 +207,40 @@ body {
 
             }
 
+            .module-class-count {
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: inset 0 0 0 9px var(--bg-modules-item); /* 4px de "borda" pra dentro */
+                width: 90%;
+                height: 100px;
+                margin-top: 60px;
+                background-color: var(--bg-color);
+    
+                p {
+                    color: var(--bg-modules-item);
+                    font-size: 40px;
+                    text-align: center;
+                    line-height: 80px;
+                    margin: 0;
+                }
+            }
+
+            .dotted-line {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                width: 3px;
+                border-left: 3px dotted #e9c46a;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+            
         }
+
 
     }
 }
