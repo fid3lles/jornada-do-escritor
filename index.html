@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornada do Escritor</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -30,7 +31,15 @@
             <div class="welcome-video-wrapper">
                 <h1>Assista o vídeo abaixo de 10 minutos para conhecer todas as trilhas.</h1>
                 <div class="video-wrapper">
-                    
+                    <iframe 
+                        class="video-player"
+                        src="https://www.youtube-nocookie.com/embed/preMtyGhOSI?si=EzHxh-ITGUjIK9b5&amp;controls=0" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -39,49 +48,73 @@
                 <h1>os módulos</h1>
             </div>
             <ul>
-                <li class="module-card-item">
+                <li 
+                    class="module-card-item"
+                    data-aos="fade-up"
+                >
                     <div class="module-card-item-content">
                         <h3>Como escrever boas histórias</h3>
                         <p>Uma trilha de conhecimento dividida por gêneros. Você vai aprender sobre as estruturas narrativas de cada um deles, seus respectivos cliches e como usa-los (ou inovar neles!) para que você aprenda a criar bons personagens e narrativas que permanecem na memória.</p>
                     </div>
                 </li>
-                <li class="module-card-item">
+                <li 
+                    class="module-card-item"
+                    data-aos="fade-up"
+                >
                     <div class="module-card-item-content">
                         <h3>Como escrever bons contos</h3>
                         <p>Análises e orientações para a criação de histórias mais contidas e lineares, para impulsionar o início da sua carreira através de  histórias marcantes e de fácil leitura.</p>
                     </div>
                 </li>
-                <li class="module-card-item">
+                <li 
+                    class="module-card-item"
+                    data-aos="fade-up"
+                >
                     <div class="module-card-item-content">
                         <h3>Ferramentas de escrita</h3>
                         <p>Aqui vamos destrincha as principais ferramentas da carreira de um escritor, para que você aprenda a usá-las de forma prática e definitiva.</p>
                     </div>
                 </li>
-                <li class="module-card-item">
+                <li 
+                    class="module-card-item"
+                    data-aos="fade-up"
+                >
                     <div class="module-card-item-content">
                         <h3>Como publicar independente</h3>
                         <p>De como preencher o formulário no Google Forms para captar leitores até embalar e enviar seu livro pelos Correios — tudo o que você precisa saber para lançar seu livro em e-book ou físico.</p>
                     </div>
                 </li>
-                <li class="module-card-item">
+                <li 
+                    class="module-card-item"
+                    data-aos="fade-up"
+                >
                     <div class="module-card-item-content">
                         <h3>Criação de conteúdo</h3>
                         <p>Uma trilha para entender como crescer nas redes sociais por meio de análises claras de vídeos, posts e stories de sucesso. É o fim do medo de produzir conteúdo.</p>
                     </div>
                 </li>
-                <li class="module-card-item">
+                <li 
+                    class="module-card-item"
+                    data-aos="fade-up"
+                >
                     <div class="module-card-item-content">
                         <h3>Ferramentas de criação de conteúdo</h3>
                         <p>Descomplicando mais ainda a criação de conteúdo vamos te ensinar aqui as ferramentas necessárias! Aulas de edição de vídeo, criação de posts no canva e muito mais.</p>
                     </div>
                 </li>
-                <li class="module-card-item">
+                <li 
+                    class="module-card-item"
+                    data-aos="fade-up"
+                >
                     <div class="module-card-item-content">
                         <h3>Postura em eventos</h3>
                         <p>Uma trilha para aprender a fazer networking, saber o que levar e como se portar em diferentes eventos literários como sessão de autógrafos, palcos, rodas de conversa e lançamentos.</p>
                     </div>
                 </li>
-                <li class="module-card-item">
+                <li 
+                    class="module-card-item"
+                    data-aos="fade-up"
+                >
                     <div class="module-card-item-content">
                         <h3>Análises literárias</h3>
                         <p>Aulas que analisam livros de sucesso de diferentes gêneros para entender o que os tornou únicos — e transformar esse aprendizado em ferramentas para a sua escrita.</p>
@@ -93,7 +126,7 @@
 
         </section>
     </div>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <a onclick="return false;" href="https://pay.hotmart.com/B102294718B?checkoutMode=2" class="hotmart-fb hotmart__button-checkout"><img src='https://static.hotmart.com/img/btn-buy-green.png'></a> -->
     <script type="text/javascript">
         function importHotmart(){ 
@@ -108,6 +141,9 @@
         } 
         importHotmart(); 
     </script> 
+    <script>
+        AOS.init();
+    </script>
     <script src="./assets/js/main"></script>
 </body>
 </html>

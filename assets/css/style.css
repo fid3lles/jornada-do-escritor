@@ -128,9 +128,13 @@ body {
             }
             
             .video-wrapper {
-                width: 80%;
-                height: 210px;
-                background-color: var(--bg-modules-item);
+                width: 90%;
+                
+                .video-player {
+                    aspect-ratio: 16/9;
+                    width: 100%;
+                }
+
             }
         }
     }
@@ -167,8 +171,8 @@ body {
 
             .module-card-item {
                 background-color: var(--bg-modules-item);
-                width: 80%;
-                height: 220px;
+                width: 90%;
+                height: 200px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -180,7 +184,8 @@ body {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    width: 100%;
+                    margin-left: 16px;
+                    margin-right: 16px;
 
                     h3 {
                         color: var(--modules-item-text);
