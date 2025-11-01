@@ -145,6 +145,8 @@ body {
         align-items: center;
         justify-content: center;
         width: 100%;
+        margin-top: 20px;
+        margin-bottom: 40px;
 
         .modules-title-wrapper {
             width: 90%;
@@ -240,7 +242,187 @@ body {
             }
             
         }
+    }
 
+    .teachers-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 40px;
+
+        .teachers-title-wrapper {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+
+            h1 {
+                text-transform: uppercase;
+                text-align: center;
+                font-family: 'DreamOrphans', sans-serif;
+                color: var(--title-font-color);
+            }
+        }
+
+        .teacher-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 90%;
+
+            .teacher-item-bio {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    display: inline-block;
+                    font-size: larger;
+                    text-align: center;
+                    font-family: 'DreamOrphans', sans-serif;
+                    color: var(--title-font-color);
+                    margin: 0 0 8px 0;
+                }
+                p {
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+
+            .teacher-item-portrait {
+                width: 50%;
+                height: 200px;
+                display: flex;
+
+                .image-holder {
+                    margin: 10px;
+                    background-size: cover;
+                    border-radius: 10px;
+                    width: 100%;
+                }
+
+                .heloisa {
+                    background-image: url('../img/heloisa_portrait.jpg');
+                    background-position: 50% 50%;
+                }
+
+                .gerson {
+                    background-image: url('../img/gerson_portrait.jpg');
+                }
+            }
+        }
+    }
+
+    .price-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+        .price-title-wrapper {
+            h1 {
+                text-transform: uppercase;
+                text-align: center;
+                font-family: 'DreamOrphans', sans-serif;
+                color: var(--title-font-color);
+            }
+        }
+
+        .price-values-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                font-family: 'Autoradiographic', sans-serif;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .old {
+                font-size: 90px;
+                position: relative;
+                position: relative;
+                display: inline-block;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    height: 6px;
+                    background: rgb(255, 255, 255);
+                }
+            }
+
+            .new {
+                color: var(--title-font-color);
+                font-size: 120px;
+            }
+
+            h4 {
+                color: var(--bg-modules-item);
+                margin: 6px 0 0 0;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .faqs-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .faqs-title-wrapper {
+            h1 {
+                text-transform: uppercase;
+                text-align: center;
+                font-family: 'DreamOrphans', sans-serif;
+                color: var(--title-font-color);
+            }
+        }
+
+        .faqs-accordion-wrapper {
+
+            
+            .faqs-accordion-item {
+                
+                .faqs-accordion-btn {
+                    background-color: var(--title-font-color);
+                    color: var(--modules-item-text);
+                    font-family: 'Autoradiographic', sans-serif;
+                    cursor: pointer;
+                    padding: 18px;
+                    width: 100%;
+                    text-align: left;
+                    border: none;
+                    outline: none;
+                    transition: 0.4s;
+                }
+
+                div {
+                    padding: 0 18px;
+                    display: none;
+                    overflow: hidden;
+
+                    p{
+
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
 
     }
 }
