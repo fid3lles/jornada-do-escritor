@@ -450,6 +450,10 @@ body {
                     display: none;
                     overflow: hidden;
                 }
+                
+                a {
+                    color: var(--title-font-color);
+                }
             }
         }
     }
