@@ -46,6 +46,11 @@ body {
     margin-left: 16px;
     font-family: 'Autoradiographic', sans-serif;
 
+    @media (min-width: 768px) {
+        margin-right: 30%;
+        margin-left: 30%;       
+    }
+
     hr {
         width: 20%;
         border: 0.5px solid var(--title-font-color);
@@ -184,6 +189,11 @@ body {
                 justify-content: center;
                 border-radius: 10px;
 
+                @media (min-width: 768px) {
+                    width: 40%;    
+                    min-width: 350px;
+                }
+
                 .module-card-item-content {
                     display: flex;
                     flex-direction: column;
@@ -220,6 +230,10 @@ body {
                 height: 100px;
                 margin-top: 60px;
                 background-color: var(--bg-color);
+
+                @media (min-width: 768px) {
+                    width: 428px;
+                }
 
                 p {
                     color: var(--bg-modules-item);
@@ -273,6 +287,10 @@ body {
             align-items: center;
             width: 90%;
 
+            @media (min-width: 768px) {
+                flex-direction: column-reverse;
+            }
+            
             .teacher-item-bio {
                 width: 50%;
                 display: flex;
@@ -299,6 +317,11 @@ body {
                 height: 200px;
                 display: flex;
 
+                @media (min-width: 768px) {
+                    height: 390px;
+                    width: 300px;
+                }
+
                 .image-holder {
                     margin: 10px;
                     background-size: cover;
@@ -314,6 +337,13 @@ body {
                 .gerson {
                     background-image: url('../img/gerson_portrait.jpg');
                 }
+            }
+        }
+
+        .reverse {
+            @media (min-width: 768px) {
+                flex-direction: column;
+                margin-top: 40px;
             }
         }
     }
