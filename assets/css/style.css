@@ -411,6 +411,19 @@ body {
                 margin-bottom: 40px;
             }
 
+            .payment-methods {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 40px;
+                width: 80%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
             .buy {
                 border: 3px solid var(--buy-button-bg);
                 width: 260px;
